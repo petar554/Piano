@@ -6,3 +6,18 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.keys {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.keys div {
+  border: 2px solid black;
+  padding: 20px;
+  /* instead of width */
+  flex-basis: 4rem;
+  height: 3rem;
+}

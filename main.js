@@ -1,7 +1,11 @@
-window.addEventListener('keydown', function (e) {
-    console.log(e);
-});
+function playSound(event) {
+    const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+    const key = document.querySelector(`div[data-key="${event.keyCode}"]`);
 
-function play(event){
-    const audio = document.querySelector(``)
+    audio.play();
+    audio.currentTime = 0;
+    key.classList.add('play');
 }
+
+
+window.addEventListener('keydown', playSound);
